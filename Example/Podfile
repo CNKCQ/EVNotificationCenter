@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EVNotificationCenter_Example' do
+  pod 'EVNotificationCenter', :path => '../'
+
+  target 'EVNotificationCenter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
