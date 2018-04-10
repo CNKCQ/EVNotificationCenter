@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		948B1F86C134DBC14548918C /* Pods_EVNotificationCenter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8129276DFB3400BB222DAB4B /* Pods_EVNotificationCenter_Example.framework */; };
 		9D377A0084AA3FAAC1B4BDD7 /* Pods_EVNotificationCenter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E11BF29A52B93FED8B9D14D /* Pods_EVNotificationCenter_Tests.framework */; };
+		AA736FAD207CFF2100A3CFFC /* EVNTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA736FAC207CFF2100A3CFFC /* EVNTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D262270B496B477BE205715 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0D262270B496B477BE205715 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0E11BF29A52B93FED8B9D14D /* Pods_EVNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVNotificationCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DE6B1DD96B0CFC7E66FBC7 /* Pods-EVNotificationCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNotificationCenter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVNotificationCenter_Example/Pods-EVNotificationCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		342993277D19EF86A7E9C161 /* Pods-EVNotificationCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNotificationCenter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVNotificationCenter_Tests/Pods-EVNotificationCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5B5F2BDAE07CC50208AB8C53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5B5F2BDAE07CC50208AB8C53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* EVNotificationCenter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNotificationCenter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +66,9 @@
 		72CDDBA7E00C3470C8A896CC /* Pods-EVNotificationCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNotificationCenter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EVNotificationCenter_Tests/Pods-EVNotificationCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8129276DFB3400BB222DAB4B /* Pods_EVNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVNotificationCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2F38A170392352D961F059D /* EVNotificationCenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EVNotificationCenter.podspec; path = ../EVNotificationCenter.podspec; sourceTree = "<group>"; };
+		AA736FAB207CFF2100A3CFFC /* EVNTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVNTest.h; sourceTree = "<group>"; };
+		AA736FAC207CFF2100A3CFFC /* EVNTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVNTest.m; sourceTree = "<group>"; };
+		D2F38A170392352D961F059D /* EVNotificationCenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EVNotificationCenter.podspec; path = ../EVNotificationCenter.podspec; sourceTree = "<group>"; };
 		D95361BD01C74D07779E3671 /* Pods-EVNotificationCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNotificationCenter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EVNotificationCenter_Example/Pods-EVNotificationCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				AA736FAB207CFF2100A3CFFC /* EVNTest.h */,
+				AA736FAC207CFF2100A3CFFC /* EVNTest.m */,
 			);
 			name = "Example for EVNotificationCenter";
 			path = EVNotificationCenter;
@@ -404,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* EVNAppDelegate.m in Sources */,
+				AA736FAD207CFF2100A3CFFC /* EVNTest.m in Sources */,
 				6003F5A7195388D20070C39A /* EVNViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

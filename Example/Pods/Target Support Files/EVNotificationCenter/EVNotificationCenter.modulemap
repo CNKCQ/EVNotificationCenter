@@ -1,0 +1,6 @@
+framework module EVNotificationCenter {
+  umbrella header "EVNotificationCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}

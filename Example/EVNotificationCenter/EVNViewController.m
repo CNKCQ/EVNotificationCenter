@@ -7,6 +7,8 @@
 //
 
 #import "EVNViewController.h"
+#import <EVNotificationCenter/EVNotificationCenter.h>
+#import "EVNTest.h"
 
 @interface EVNViewController ()
 
@@ -17,13 +19,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    EVNTest *test = [EVNTest new];
+    
+    [[EVNotificationCenter default] addObserver:self selector:@selector(test) name:@"EVNotificationCenterKey" object:nil];
+    [[EVNotificationCenter default] addObserver:test selector:@selector(hello) name:@"EVNotificationCenterKey" object:nil];
+    [[EVNotificationCenter default] addObserverForName:@"EVNotificationCenterKey" object:@"block" queue:nil usingBlock:^(NSString *para) {
+        NSLog(@"🍄-%@-🍄", para);
+    }];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
+}
+
+- (void)test {
+    NSLog(@"🌹🌹🌹🐯🐯");
 }
 
 @end
