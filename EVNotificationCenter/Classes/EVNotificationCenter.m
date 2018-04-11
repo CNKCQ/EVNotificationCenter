@@ -129,16 +129,15 @@
 }
 
 - (void)removeObserver:(nonnull id)observer name:(nullable NSNotificationName)aName object:(nullable id)object {
-    __block EVNote *note = (EVNote *)[self.store valueForKey:aName];
+    EVNote *note = (EVNote *)[self.store valueForKey:aName];
     pthread_mutex_lock(&mutex); // 申请锁
+    NSMutableArray<ObserverModel *> *tempArry = [NSMutableArray arrayWithArray:note.observers];
     [note.observers enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(ObserverModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         if ([obj.target isEqual:observer]) {
-            [note.observers removeObject:obj];
+            [tempArry removeObject:obj];
         }
-#pragma clang diagnostic pop
     }];
+    note.observers = tempArry;
     pthread_mutex_unlock(&mutex); // 释放锁
 }
 

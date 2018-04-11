@@ -14,18 +14,29 @@
 
 @end
 
-@implementation EVNViewController
+@implementation EVNViewController {
+    EVNTest *test;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    EVNTest *test = [EVNTest new];
+    test = [EVNTest new];
     
     [[EVNotificationCenter default] addObserver:self selector:@selector(test) name:@"EVNotificationCenterKey" object:nil];
-    [[EVNotificationCenter default] addObserver:test selector:@selector(hello) name:@"EVNotificationCenterKey" object:nil];
+//    [[EVNotificationCenter default] addObserver:test selector:@selector(hello) name:@"EVNotificationCenterKey" object:nil];
     [[EVNotificationCenter default] addObserverForName:@"EVNotificationCenterKey" object:@"block" queue:nil usingBlock:^(NSString *para) {
         NSLog(@"🍄-%@-🍄", para);
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"remove" style:UIBarButtonItemStylePlain target:self action:@selector(remove)];
+}
+
+- (void)remove {
+    [[EVNotificationCenter default] removeObserver:self name:@"EVNotificationCenterKey" object:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
