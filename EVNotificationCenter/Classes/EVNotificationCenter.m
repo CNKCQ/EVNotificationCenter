@@ -8,6 +8,27 @@
 #import "EVNotificationCenter.h"
 #import <pthread/pthread.h>
 
+
+@interface ObserverModel : NSObject
+
+@property (nonatomic, weak, nullable) id target;
+
+@property (nonatomic, assign) SEL sel;
+
+@property (nonatomic, weak, nullable) id object;
+
+@property (nonatomic, copy) void(^block)(id);
+
+@property (nonatomic, strong, nullable) NSOperationQueue *operationQueue;
+
+@end
+
+@interface EVNote : NSObject
+
+@property (nonatomic, strong) NSMutableArray<ObserverModel *> *observers;
+
+@end
+
 @implementation ObserverModel
 
 @end
@@ -15,7 +36,6 @@
 @implementation EVNote
 
 @end
-
 
 @interface EVNotificationCenter()
 
