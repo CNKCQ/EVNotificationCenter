@@ -86,7 +86,7 @@
     }
 }
 
-- (void)addObserverForName:(nullable NSNotificationName)aName object:(nullable id)object queue:(nullable NSOperationQueue *)queue usingBlock:(void(^)(id))block{
+- (void)addObserver:(nonnull id)observer name:(nullable NSNotificationName)aName object:(nullable id)object queue:(nullable NSOperationQueue *)queue usingBlock:(void(^)(id  _Nullable x))block {
     @autoreleasepool {
         pthread_mutex_lock(&mutex); // 申请锁
         EVNote *note = [self.store objectForKey:aName];
@@ -95,7 +95,7 @@
             note.observers = [NSMutableArray array];
         }
         ObserverModel *observerModel = [[ObserverModel alloc] init];
-        observerModel.target = object;
+        observerModel.target = observer;
         observerModel.block = block;
         observerModel.object = object;
         observerModel.operationQueue = queue;
@@ -132,7 +132,7 @@
     EVNote *note = (EVNote *)[self.store valueForKey:aName];
     pthread_mutex_lock(&mutex); // 申请锁
     NSMutableArray<ObserverModel *> *tempArry = [NSMutableArray arrayWithArray:note.observers];
-    [note.observers enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(ObserverModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [[note.observers copy] enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(ObserverModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.target isEqual:observer]) {
             [tempArry removeObject:obj];
         }

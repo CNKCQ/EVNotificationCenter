@@ -13,7 +13,7 @@
 
 - (void)addObserver:(nonnull id)observer selector:(nonnull SEL)sel name:(nullable NSNotificationName)aName object:(nullable id)object;
 
-- (void)addObserverForName:(nullable NSNotificationName)aName object:(nullable id)object queue:(nullable NSOperationQueue *)queue usingBlock:(void(^)(id))block;
+- (void)addObserver:(nonnull id)observer name:(nullable NSNotificationName)aName object:(nullable id)object queue:(nullable NSOperationQueue *)queue usingBlock:(void(^)(id  _Nullable x))block;
 
 - (void)postNotificationName:(nonnull NSNotificationName)aName object:(nullable id)object;
 

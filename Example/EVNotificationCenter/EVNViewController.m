@@ -24,8 +24,8 @@
     test = [EVNTest new];
     
     [[EVNotificationCenter default] addObserver:self selector:@selector(test) name:@"EVNotificationCenterKey" object:nil];
-//    [[EVNotificationCenter default] addObserver:test selector:@selector(hello) name:@"EVNotificationCenterKey" object:nil];
-    [[EVNotificationCenter default] addObserverForName:@"EVNotificationCenterKey" object:@"block" queue:nil usingBlock:^(NSString *para) {
+    [[EVNotificationCenter default] addObserver:test selector:@selector(hello) name:@"EVNotificationCenterKey" object:nil];
+    [[EVNotificationCenter default] addObserver:self name:@"EVNotificationCenterKey" object:@"block" queue:nil usingBlock:^(NSString *para) {
         NSLog(@"🍄-%@-🍄", para);
     }];
 }
@@ -36,7 +36,7 @@
 }
 
 - (void)remove {
-    [[EVNotificationCenter default] removeObserver:self name:@"EVNotificationCenterKey" object:nil];
+    [[EVNotificationCenter default] removeObserver:test name:@"EVNotificationCenterKey" object:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
