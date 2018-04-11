@@ -1,0 +1,16 @@
+PODS:
+  - SNotificationCenter (0.1.0)
+
+DEPENDENCIES:
+  - SNotificationCenter (from `../`)
+
+EXTERNAL SOURCES:
+  SNotificationCenter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SNotificationCenter: 2469cba204488ce6e796f6c09f2af83ead580a05
+
+PODFILE CHECKSUM: 783f2abe03ee0715b03adebfe31cf68672a3491c
+
+COCOAPODS: 1.3.0
