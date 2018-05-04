@@ -69,40 +69,45 @@
 }
 
 - (void)addObserver:(nonnull id)observer selector:(nonnull SEL)sel name:(nullable NSNotificationName)aName object:(nullable id)object {
-    @autoreleasepool {
-        pthread_mutex_lock(&mutex); // 申请锁
-        EVNote *note = [self.store objectForKey:aName];
-        if (!note) {
-            note = [[EVNote alloc] init];
-            note.observers = [NSMutableArray array];
-        }
-        ObserverModel *observerModel = [[ObserverModel alloc] init];
-        observerModel.target = observer;
-        observerModel.sel = sel;
-        observerModel.object = object;
-        [note.observers addObject:observerModel];
-        [self.store setObject:note forKey:aName];
-        pthread_mutex_unlock(&mutex); // 释放锁
+    [self addObserver:observer selector:sel name:aName queue:[NSOperationQueue currentQueue] object:object];
+}
+
+- (void)addObserver:(nonnull id)observer selector:(nonnull SEL)sel name:(nullable NSNotificationName)aName queue:(nullable NSOperationQueue *)queue object:(nullable id)object {
+    pthread_mutex_lock(&mutex); // 申请锁
+    EVNote *note = [self.store objectForKey:aName];
+    if (!note) {
+        note = [[EVNote alloc] init];
+        note.observers = [NSMutableArray array];
     }
+    ObserverModel *observerModel = [[ObserverModel alloc] init];
+    observerModel.target = observer;
+    observerModel.sel = sel;
+    observerModel.object = object;
+    observerModel.operationQueue = queue;
+    [note.observers addObject:observerModel];
+    [self.store setObject:note forKey:aName];
+    pthread_mutex_unlock(&mutex); // 释放锁
+}
+
+- (void)addObserver:(nonnull id)observer name:(nullable NSNotificationName)aName object:(nullable id)object usingBlock:(void(^)(id  _Nullable x))block{
+    [self addObserver:observer name:aName object:object queue:[NSOperationQueue currentQueue] usingBlock:block];
 }
 
 - (void)addObserver:(nonnull id)observer name:(nullable NSNotificationName)aName object:(nullable id)object queue:(nullable NSOperationQueue *)queue usingBlock:(void(^)(id  _Nullable x))block {
-    @autoreleasepool {
-        pthread_mutex_lock(&mutex); // 申请锁
-        EVNote *note = [self.store objectForKey:aName];
-        if (!note) {
-            note = [[EVNote alloc] init];
-            note.observers = [NSMutableArray array];
-        }
-        ObserverModel *observerModel = [[ObserverModel alloc] init];
-        observerModel.target = observer;
-        observerModel.block = block;
-        observerModel.object = object;
-        observerModel.operationQueue = queue;
-        [note.observers addObject:observerModel];
-        [self.store setObject:note forKey:aName];
-        pthread_mutex_unlock(&mutex); // 释放锁
+    pthread_mutex_lock(&mutex); // 申请锁
+    EVNote *note = [self.store objectForKey:aName];
+    if (!note) {
+        note = [[EVNote alloc] init];
+        note.observers = [NSMutableArray array];
     }
+    ObserverModel *observerModel = [[ObserverModel alloc] init];
+    observerModel.target = observer;
+    observerModel.block = block;
+    observerModel.object = object;
+    observerModel.operationQueue = queue;
+    [note.observers addObject:observerModel];
+    [self.store setObject:note forKey:aName];
+    pthread_mutex_unlock(&mutex); // 释放锁
 }
 
 - (void)postNotificationName:(nonnull NSNotificationName)aName object:(nullable id)object {
@@ -111,7 +116,13 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         if ([obj.target respondsToSelector:obj.sel]) {
-            [obj.target performSelector:obj.sel withObject:obj.object];
+            if (obj.operationQueue) {
+                NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:obj.target selector:obj.sel object:obj.object];
+                NSOperationQueue *operationQueue = obj.operationQueue;
+                [operationQueue addOperation:operation];
+            } else {
+                [obj.target performSelector:obj.sel withObject:obj.object];
+            }
         }
         if (obj.block) {
             if (obj.operationQueue) {
