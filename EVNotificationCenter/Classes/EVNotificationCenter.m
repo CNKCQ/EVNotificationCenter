@@ -113,15 +113,16 @@
 - (void)postNotificationName:(nonnull NSNotificationName)aName object:(nullable id)object {
     EVNote *note = (EVNote *)[self.store valueForKey:aName];
     [[note.observers copy] enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(ObserverModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         if ([obj.target respondsToSelector:obj.sel]) {
             if (obj.operationQueue) {
                 NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:obj.target selector:obj.sel object:obj.object];
                 NSOperationQueue *operationQueue = obj.operationQueue;
                 [operationQueue addOperation:operation];
             } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                 [obj.target performSelector:obj.sel withObject:obj.object];
+#pragma clang diagnostic pop
             }
         }
         if (obj.block) {
@@ -135,7 +136,6 @@
                obj.block(obj.object);
             }
         }
-#pragma clang diagnostic pop
     }];
 }
 
