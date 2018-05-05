@@ -8,6 +8,7 @@
 
 #import "EVNViewController.h"
 #import <EVNotificationCenter/EVNotificationCenter.h>
+#import "ENSViewController.h"
 #import "EVNTest.h"
 
 @interface EVNViewController ()
@@ -30,7 +31,7 @@
 //        NSLog(@"🍄-%@-🍄%@", para, [NSThread currentThread]);
 //    }];
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test) name:@"test" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test1) name:@"test" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test1) name:@"test" object:nil];
 
 
 }
@@ -50,6 +51,8 @@
 //        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
         [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
     });
+    ENSViewController *controller = [[ENSViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:true];
 }
 
 - (void)test {
