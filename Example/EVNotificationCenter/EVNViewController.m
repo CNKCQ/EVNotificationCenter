@@ -25,6 +25,7 @@
     test = [EVNTest new];
     
     [[EVNotificationCenter default] addObserver:self selector:@selector(test) name:@"EVNotificationCenterKey" object:nil];
+    
 //    [[EVNotificationCenter default] addObserver:test selector:@selector(hello) name:@"EVNotificationCenterKey" object:nil];
 //    NSOperationQueue *queue = [NSOperationQueue currentQueue];
 //    [[EVNotificationCenter default] addObserver:self name:@"EVNotificationCenterKey" object:@"block" queue:queue usingBlock:^(NSString *para) {
@@ -47,12 +48,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //     [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 //        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
         [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
-    });
-    ENSViewController *controller = [[ENSViewController alloc] init];
-    [self.navigationController pushViewController:controller animated:true];
+//    });
+//    ENSViewController *controller = [[ENSViewController alloc] init];
+//    [self.navigationController pushViewController:controller animated:true];
 }
 
 - (void)test {

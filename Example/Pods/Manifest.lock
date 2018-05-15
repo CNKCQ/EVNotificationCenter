@@ -1,5 +1,5 @@
 PODS:
-  - EVNotificationCenter (0.1.0)
+  - EVNotificationCenter (1.0.0)
 
 DEPENDENCIES:
   - EVNotificationCenter (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EVNotificationCenter: decceb25e3afbf7cb4e5c4b65de9886021044948
+  EVNotificationCenter: cf48839232ffd886b70f8d42226b352eb41d9e6b
 
 PODFILE CHECKSUM: dafa1a5170058be0268e2048d845c81e548d70f1
 

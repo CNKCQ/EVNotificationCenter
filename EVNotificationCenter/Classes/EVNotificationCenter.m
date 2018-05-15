@@ -25,7 +25,7 @@
 
 @interface EVNote : NSObject
 
-@property (nonatomic, strong) NSMutableArray<ObserverModel *> *observers;
+@property (nonatomic, strong) NSMutableSet<ObserverModel *> *observers;
 
 @end
 
@@ -77,7 +77,7 @@
     EVNote *note = [self.store objectForKey:aName];
     if (!note) {
         note = [[EVNote alloc] init];
-        note.observers = [NSMutableArray array];
+        note.observers = [NSMutableSet set];
     }
     ObserverModel *observerModel = [[ObserverModel alloc] init];
     observerModel.target = observer;
@@ -98,7 +98,7 @@
     EVNote *note = [self.store objectForKey:aName];
     if (!note) {
         note = [[EVNote alloc] init];
-        note.observers = [NSMutableArray array];
+        note.observers = [NSMutableSet set];
     }
     ObserverModel *observerModel = [[ObserverModel alloc] init];
     observerModel.target = observer;
@@ -142,13 +142,13 @@
 - (void)removeObserver:(nonnull id)observer name:(nullable NSNotificationName)aName object:(nullable id)object {
     EVNote *note = (EVNote *)[self.store valueForKey:aName];
     pthread_mutex_lock(&mutex); // 申请锁
-    NSMutableArray<ObserverModel *> *tempArry = [NSMutableArray arrayWithArray:note.observers];
+    NSMutableSet<ObserverModel *> *tempSet = [NSMutableSet setWithSet:note.observers];
     [[note.observers copy] enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(ObserverModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.target isEqual:observer]) {
-            [tempArry removeObject:obj];
+            [tempSet removeObject:obj];
         }
     }];
-    note.observers = tempArry;
+    note.observers = tempSet;
     pthread_mutex_unlock(&mutex); // 释放锁
 }
 
