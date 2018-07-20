@@ -11,7 +11,6 @@
 #endif
 
 #import "EVNotificationCenter.h"
-//#import "NSMutableArray+weak.h"
 
 FOUNDATION_EXPORT double EVNotificationCenterVersionNumber;
 FOUNDATION_EXPORT const unsigned char EVNotificationCenterVersionString[];

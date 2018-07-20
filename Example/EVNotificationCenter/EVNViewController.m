@@ -31,8 +31,8 @@
 //    [[EVNotificationCenter default] addObserver:self name:@"EVNotificationCenterKey" object:@"block" queue:queue usingBlock:^(NSString *para) {
 //        NSLog(@"🍄-%@-🍄%@", para, [NSThread currentThread]);
 //    }];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test) name:@"test" object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test1) name:@"test" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test) name:@"test" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test1) name:@"test" object:nil];
 
 
 }
@@ -48,16 +48,19 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //     [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
-        [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
-//    });
+    
+    // 证明观察者处理 线程和 发通知的线程相同
+ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
+//        [[EVNotificationCenter default] postNotificationName:@"EVNotificationCenterKey" object:nil];
+    });
 //    ENSViewController *controller = [[ENSViewController alloc] init];
 //    [self.navigationController pushViewController:controller animated:true];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:nil];
 }
 
 - (void)test {
-//    sleep(10);
+    sleep(10); // 证明了通知的观察者接受到消息是同步的
     NSLog(@"🌹🌹🌹🐯🐯%@", [NSThread currentThread]);
 
 }

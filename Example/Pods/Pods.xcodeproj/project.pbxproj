@@ -8,41 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		07467E8B538A3F41E9730EE4CC175CA3 /* Pods-EVNotificationCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64917B99333CD6AEE984520009ABCC44 /* Pods-EVNotificationCenter_Example-dummy.m */; };
-		0C9B95BDFD3C0298950A930789047E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0DD1C119EAC647AAAE023DB20D73A17D /* Pods-EVNotificationCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9F2E7C13175C50001DCEFA5830747 /* Pods-EVNotificationCenter_Tests-dummy.m */; };
-		2FF622A1E39D15C50DF12D64D155B9EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3CEB2EF32B959F593203916A412D453A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		41D84D876B04819C18665E6764478CBC /* EVNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE4288FE578E1750AB9820D1C9D4144 /* EVNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		437AC6EF664E53A7A812D3F1C201DADF /* Pods-EVNotificationCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B7D7FA8DFAB0283FE6F2E0663C0F2A /* Pods-EVNotificationCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		453FFF89A27DD2D4F252FEFA963155AD /* EVNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E30FFD6689F99610157A068F4BDEB58A /* EVNotificationCenter-dummy.m */; };
+		074BAD8E1C89A6E8F5BBDE05AAD8C4F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		46FD6732854C73CFC4E1454AB5CCF0B3 /* EVNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C02B8AAB38CC6ECD39E4F11F0321B4FA /* EVNotificationCenter-dummy.m */; };
+		5718E49CC5136068625F6AB76E93814E /* Pods-EVNotificationCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B7D7FA8DFAB0283FE6F2E0663C0F2A /* Pods-EVNotificationCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7863BC5C35A86DAF23A4C8D28E153A66 /* EVNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD22112076335F3376B689F38BF1CDD2 /* EVNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C9FE1E69C3FF63F9DD14D9BB1F70355 /* EVNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB0B337A9A57013AB1A4DD8CF5392A5 /* EVNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB3FAB04B9114AD6954C410ABBAE9786 /* Pods-EVNotificationCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F848D9977EEA26D3B65FF44DD93BE187 /* Pods-EVNotificationCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC514F54360CC9AA542B9D08D566CE2E /* EVNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00476DBD1875AF656A7A6E9E782CC4B8 /* EVNotificationCenter.m */; };
-		D27CFFDFB4BD3A73686D2461DED3CD74 /* EVNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2B13B97E02BF267D7CEAEB494AC40E /* EVNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEBE33CDDD2B3EFF138F55C57EB62E61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		CCC668D438AB474B801BD37CA2626B0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		D7200B36D65FE5F9A6BD674343A79330 /* Pods-EVNotificationCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9F2E7C13175C50001DCEFA5830747 /* Pods-EVNotificationCenter_Tests-dummy.m */; };
+		FC6F1485AD156EE733F106800E602B93 /* EVNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1548FEFE7BC688B4A2D8C4B4501E0215 /* EVNotificationCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3FE84C227539BC62C81D8C4FFE9ED7BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C984BEF598187F1E76B541B0AB414C82;
+			remoteInfo = "Pods-EVNotificationCenter_Example";
+		};
 		EB990EB15038BFEADDDFBAC775D058A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 735E460D7483EAD6C2525BBE2B9110FF;
+			remoteGlobalIDString = B2F333846E969945ABD87640E34509C6;
 			remoteInfo = EVNotificationCenter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		002A78F3E8262D8A70722F712B9A4678 /* Pods-EVNotificationCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EVNotificationCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		00476DBD1875AF656A7A6E9E782CC4B8 /* EVNotificationCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EVNotificationCenter.m; path = EVNotificationCenter/Classes/EVNotificationCenter.m; sourceTree = "<group>"; };
-		05E1671F0F4F3305D34DAE96606B1B0B /* Pods_EVNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVNotificationCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E1671F0F4F3305D34DAE96606B1B0B /* Pods_EVNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EVNotificationCenter_Example.framework; path = "Pods-EVNotificationCenter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A0271973B1436865A966F5BDACFCDF /* Pods-EVNotificationCenter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EVNotificationCenter_Example-resources.sh"; sourceTree = "<group>"; };
+		0B3ECAE261E88D3BBB236E285AF94412 /* EVNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EVNotificationCenter.xcconfig; sourceTree = "<group>"; };
+		132D56A771E3A63B7281D56F9D4CB6FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1548FEFE7BC688B4A2D8C4B4501E0215 /* EVNotificationCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EVNotificationCenter.m; path = EVNotificationCenter/Classes/EVNotificationCenter.m; sourceTree = "<group>"; };
 		15B7D7FA8DFAB0283FE6F2E0663C0F2A /* Pods-EVNotificationCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EVNotificationCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1C8D3F4D9BE4565AB0E4F18F62CEA75F /* Pods-EVNotificationCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EVNotificationCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2193E7125FD7509E627B14A4C8B4CA2A /* Pods-EVNotificationCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVNotificationCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		292AA1A85ECE1E1F41BF7AF7CAD55051 /* EVNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
+		32B1F84737CFEDDE1614EA840DD54B1D /* EVNotificationCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EVNotificationCenter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34D6CCE717F8C764547F67371ADDC966 /* Pods-EVNotificationCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVNotificationCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3E7A72892DFACC201D6A231DBDD9E5DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		44CE4E4CA3AD680AE97D6ACDCC3F076A /* Pods-EVNotificationCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EVNotificationCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4ED186398A18AEC80811A8FFE1223AF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5EB0B337A9A57013AB1A4DD8CF5392A5 /* EVNotificationCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EVNotificationCenter.h; path = EVNotificationCenter/Classes/EVNotificationCenter.h; sourceTree = "<group>"; };
 		64917B99333CD6AEE984520009ABCC44 /* Pods-EVNotificationCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EVNotificationCenter_Example-dummy.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C34FFED017B1B28C2F030AF3B1E9825 /* Pods-EVNotificationCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EVNotificationCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6FDED6EE6BEB3C4DBEDBB65BF004102A /* Pods-EVNotificationCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVNotificationCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7167EB3CCD67D966073672D8AC64F15C /* Pods-EVNotificationCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EVNotificationCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -51,71 +64,46 @@
 		8407EC935B8618B90DAC135ED718FFDD /* Pods-EVNotificationCenter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EVNotificationCenter_Tests-resources.sh"; sourceTree = "<group>"; };
 		86AD6240FF513FA916F1C1F2AAC99585 /* Pods-EVNotificationCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EVNotificationCenter_Example.modulemap"; sourceTree = "<group>"; };
 		8C24C1AC52E5B28866558B794D81B537 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95EAA7CE1AA24B446BCEA9F33D1F2B6F /* EVNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
-		9AC908228F73A1692E4A72BB941BCF11 /* EVNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EVNotificationCenter.modulemap; sourceTree = "<group>"; };
-		A8D758D91825A3117B328A891F426806 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAE4288FE578E1750AB9820D1C9D4144 /* EVNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
-		C248ECA8F6DED84077DECD0D174C82A5 /* EVNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EVNotificationCenter.xcconfig; sourceTree = "<group>"; };
+		8EAA4A402E87E849F63DFF31A446CE57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C02B8AAB38CC6ECD39E4F11F0321B4FA /* EVNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EVNotificationCenter-dummy.m"; sourceTree = "<group>"; };
 		C7201F0056283B31BA6C6218B72E719C /* Pods-EVNotificationCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EVNotificationCenter_Tests.modulemap"; sourceTree = "<group>"; };
-		CD12688389BE8E07DA9A8AC5D027F67A /* EVNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EVNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD2B13B97E02BF267D7CEAEB494AC40E /* EVNotificationCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EVNotificationCenter.h; path = EVNotificationCenter/Classes/EVNotificationCenter.h; sourceTree = "<group>"; };
+		CD12688389BE8E07DA9A8AC5D027F67A /* EVNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EVNotificationCenter.framework; path = EVNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24A67AE7004035DD379A9A17418AF00 /* Pods-EVNotificationCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVNotificationCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E30FFD6689F99610157A068F4BDEB58A /* EVNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EVNotificationCenter-dummy.m"; sourceTree = "<group>"; };
 		F848D9977EEA26D3B65FF44DD93BE187 /* Pods-EVNotificationCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EVNotificationCenter_Example-umbrella.h"; sourceTree = "<group>"; };
-		FD3F775A05A9B1B42D070EEB9C43E80F /* Pods_EVNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVNotificationCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD777B60A5F7B131F751CA48F2698AA /* EVNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EVNotificationCenter.modulemap; sourceTree = "<group>"; };
+		FD22112076335F3376B689F38BF1CDD2 /* EVNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
+		FD3F775A05A9B1B42D070EEB9C43E80F /* Pods_EVNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EVNotificationCenter_Tests.framework; path = "Pods-EVNotificationCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2BB6BF3EFF04547D98B7D75367737C3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3CEB2EF32B959F593203916A412D453A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48E456C727D301DA8204777BB6A1194D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C9B95BDFD3C0298950A930789047E4B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5A3D69330D256F2E932DD1B306E1157D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF622A1E39D15C50DF12D64D155B9EB /* Foundation.framework in Frameworks */,
+				AEBE33CDDD2B3EFF138F55C57EB62E61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35157948CB23FAD85140C6FFB8C2B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC668D438AB474B801BD37CA2626B0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94D3FFCE65E143721185440B8139C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074BAD8E1C89A6E8F5BBDE05AAD8C4F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07ECA13EF39B4BA3BBB8562279BB8A2C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9AC908228F73A1692E4A72BB941BCF11 /* EVNotificationCenter.modulemap */,
-				C248ECA8F6DED84077DECD0D174C82A5 /* EVNotificationCenter.xcconfig */,
-				E30FFD6689F99610157A068F4BDEB58A /* EVNotificationCenter-dummy.m */,
-				95EAA7CE1AA24B446BCEA9F33D1F2B6F /* EVNotificationCenter-prefix.pch */,
-				AAE4288FE578E1750AB9820D1C9D4144 /* EVNotificationCenter-umbrella.h */,
-				A8D758D91825A3117B328A891F426806 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/EVNotificationCenter";
-			sourceTree = "<group>";
-		};
-		36F91CFCB849329A6B2F363A58B531B3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				669C8A38E698EC2AD9BAABAFA0B6E0F2 /* EVNotificationCenter */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		3D03C7ED85D4F3D39529E9CED417A914 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,22 +114,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		669C8A38E698EC2AD9BAABAFA0B6E0F2 /* EVNotificationCenter */ = {
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DD2B13B97E02BF267D7CEAEB494AC40E /* EVNotificationCenter.h */,
-				00476DBD1875AF656A7A6E9E782CC4B8 /* EVNotificationCenter.m */,
-				07ECA13EF39B4BA3BBB8562279BB8A2C /* Support Files */,
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
-			name = EVNotificationCenter;
-			path = ../..;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D80CC0E32F197F70D0F398B0781FF13 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAD777B60A5F7B131F751CA48F2698AA /* EVNotificationCenter.modulemap */,
+				0B3ECAE261E88D3BBB236E285AF94412 /* EVNotificationCenter.xcconfig */,
+				C02B8AAB38CC6ECD39E4F11F0321B4FA /* EVNotificationCenter-dummy.m */,
+				292AA1A85ECE1E1F41BF7AF7CAD55051 /* EVNotificationCenter-prefix.pch */,
+				FD22112076335F3376B689F38BF1CDD2 /* EVNotificationCenter-umbrella.h */,
+				8EAA4A402E87E849F63DFF31A446CE57 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EVNotificationCenter";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				36F91CFCB849329A6B2F363A58B531B3 /* Development Pods */,
+				C31B5AFAC4F036DF92C7FA63CFC6CF06 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				3D03C7ED85D4F3D39529E9CED417A914 /* Products */,
 				AA6B1F73C41026A686398DC3A6307276 /* Targets Support Files */,
@@ -157,20 +156,30 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		B18A6764FE2941EB023A4091E1F19A03 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				32B1F84737CFEDDE1614EA840DD54B1D /* EVNotificationCenter.podspec */,
+				3E7A72892DFACC201D6A231DBDD9E5DA /* LICENSE */,
+				132D56A771E3A63B7281D56F9D4CB6FA /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		C31B5AFAC4F036DF92C7FA63CFC6CF06 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				F4D7A0792FF1C23F7F1758E8C7D1F769 /* EVNotificationCenter */,
 			);
-			name = iOS;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		E9BB32EC5116CC30F8A7561D55EAFC03 /* Pods-EVNotificationCenter_Example */ = {
@@ -189,6 +198,18 @@
 			);
 			name = "Pods-EVNotificationCenter_Example";
 			path = "Target Support Files/Pods-EVNotificationCenter_Example";
+			sourceTree = "<group>";
+		};
+		F4D7A0792FF1C23F7F1758E8C7D1F769 /* EVNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				5EB0B337A9A57013AB1A4DD8CF5392A5 /* EVNotificationCenter.h */,
+				1548FEFE7BC688B4A2D8C4B4501E0215 /* EVNotificationCenter.m */,
+				B18A6764FE2941EB023A4091E1F19A03 /* Pod */,
+				6D80CC0E32F197F70D0F398B0781FF13 /* Support Files */,
+			);
+			name = EVNotificationCenter;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		FDEBF01AAC35BD93A9F70A7F116ECCF4 /* Pods-EVNotificationCenter_Tests */ = {
@@ -220,33 +241,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39DD55037A142491B3545FA10E12CE82 /* Headers */ = {
+		343B5512325EFD73D9047D1F23D08C26 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D84D876B04819C18665E6764478CBC /* EVNotificationCenter-umbrella.h in Headers */,
-				D27CFFDFB4BD3A73686D2461DED3CD74 /* EVNotificationCenter.h in Headers */,
+				7863BC5C35A86DAF23A4C8D28E153A66 /* EVNotificationCenter-umbrella.h in Headers */,
+				7C9FE1E69C3FF63F9DD14D9BB1F70355 /* EVNotificationCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA74BB1DC73133CD73F4D0D270C5C4CC /* Headers */ = {
+		D0C1867EE372B8F0E3273DEF21CF7B96 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437AC6EF664E53A7A812D3F1C201DADF /* Pods-EVNotificationCenter_Tests-umbrella.h in Headers */,
+				5718E49CC5136068625F6AB76E93814E /* Pods-EVNotificationCenter_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		735E460D7483EAD6C2525BBE2B9110FF /* EVNotificationCenter */ = {
+		B2F333846E969945ABD87640E34509C6 /* EVNotificationCenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E28F55EB99B30435ECA1D1D6896569D /* Build configuration list for PBXNativeTarget "EVNotificationCenter" */;
+			buildConfigurationList = 5D4FFF9518619BBD19A53E99303633B2 /* Build configuration list for PBXNativeTarget "EVNotificationCenter" */;
 			buildPhases = (
-				BD8AC0A88F19F5272BAD802492EEF283 /* Sources */,
-				48E456C727D301DA8204777BB6A1194D /* Frameworks */,
-				39DD55037A142491B3545FA10E12CE82 /* Headers */,
+				95759BAE59B6B9227D350ACBD9C6D13D /* Sources */,
+				C35157948CB23FAD85140C6FFB8C2B3B /* Frameworks */,
+				343B5512325EFD73D9047D1F23D08C26 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -255,23 +276,6 @@
 			name = EVNotificationCenter;
 			productName = EVNotificationCenter;
 			productReference = CD12688389BE8E07DA9A8AC5D027F67A /* EVNotificationCenter.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AFA9EA493F99A53CA503C3F6DBC6AB8E /* Pods-EVNotificationCenter_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 947DE1B73A1C0FFB242D8D43D9975950 /* Build configuration list for PBXNativeTarget "Pods-EVNotificationCenter_Tests" */;
-			buildPhases = (
-				31617DD6F4230B9FD703BD27FE17109B /* Sources */,
-				2BB6BF3EFF04547D98B7D75367737C3C /* Frameworks */,
-				AA74BB1DC73133CD73F4D0D270C5C4CC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-EVNotificationCenter_Tests";
-			productName = "Pods-EVNotificationCenter_Tests";
-			productReference = FD3F775A05A9B1B42D070EEB9C43E80F /* Pods_EVNotificationCenter_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C984BEF598187F1E76B541B0AB414C82 /* Pods-EVNotificationCenter_Example */ = {
@@ -290,6 +294,24 @@
 			name = "Pods-EVNotificationCenter_Example";
 			productName = "Pods-EVNotificationCenter_Example";
 			productReference = 05E1671F0F4F3305D34DAE96606B1B0B /* Pods_EVNotificationCenter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9C956435594A83AE2006E57A307C7DD /* Pods-EVNotificationCenter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078BFB24B4532FACA8E3AD801B17EF03 /* Build configuration list for PBXNativeTarget "Pods-EVNotificationCenter_Tests" */;
+			buildPhases = (
+				506E73D182DF23C2A9AD7CEC0C52F4FE /* Sources */,
+				D94D3FFCE65E143721185440B8139C58 /* Frameworks */,
+				D0C1867EE372B8F0E3273DEF21CF7B96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FDF2DB7210E99CC363622ADFF896280 /* PBXTargetDependency */,
+			);
+			name = "Pods-EVNotificationCenter_Tests";
+			productName = "Pods-EVNotificationCenter_Tests";
+			productReference = FD3F775A05A9B1B42D070EEB9C43E80F /* Pods_EVNotificationCenter_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -313,19 +335,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				735E460D7483EAD6C2525BBE2B9110FF /* EVNotificationCenter */,
+				B2F333846E969945ABD87640E34509C6 /* EVNotificationCenter */,
 				C984BEF598187F1E76B541B0AB414C82 /* Pods-EVNotificationCenter_Example */,
-				AFA9EA493F99A53CA503C3F6DBC6AB8E /* Pods-EVNotificationCenter_Tests */,
+				E9C956435594A83AE2006E57A307C7DD /* Pods-EVNotificationCenter_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		31617DD6F4230B9FD703BD27FE17109B /* Sources */ = {
+		506E73D182DF23C2A9AD7CEC0C52F4FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD1C119EAC647AAAE023DB20D73A17D /* Pods-EVNotificationCenter_Tests-dummy.m in Sources */,
+				D7200B36D65FE5F9A6BD674343A79330 /* Pods-EVNotificationCenter_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,97 +359,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD8AC0A88F19F5272BAD802492EEF283 /* Sources */ = {
+		95759BAE59B6B9227D350ACBD9C6D13D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				453FFF89A27DD2D4F252FEFA963155AD /* EVNotificationCenter-dummy.m in Sources */,
-				AC514F54360CC9AA542B9D08D566CE2E /* EVNotificationCenter.m in Sources */,
+				46FD6732854C73CFC4E1454AB5CCF0B3 /* EVNotificationCenter-dummy.m in Sources */,
+				FC6F1485AD156EE733F106800E602B93 /* EVNotificationCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1FDF2DB7210E99CC363622ADFF896280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EVNotificationCenter_Example";
+			target = C984BEF598187F1E76B541B0AB414C82 /* Pods-EVNotificationCenter_Example */;
+			targetProxy = 3FE84C227539BC62C81D8C4FFE9ED7BB /* PBXContainerItemProxy */;
+		};
 		BEAFBB3F4E8C03868C49A1E795710ECF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EVNotificationCenter;
-			target = 735E460D7483EAD6C2525BBE2B9110FF /* EVNotificationCenter */;
+			target = B2F333846E969945ABD87640E34509C6 /* EVNotificationCenter */;
 			targetProxy = EB990EB15038BFEADDDFBAC775D058A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DD22BFB675B820307A8F29F816D346D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34D6CCE717F8C764547F67371ADDC966 /* Pods-EVNotificationCenter_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-EVNotificationCenter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EVNotificationCenter_Example/Pods-EVNotificationCenter_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EVNotificationCenter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1E4F526AAB4BDEBFBE39239BFB41569D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FDED6EE6BEB3C4DBEDBB65BF004102A /* Pods-EVNotificationCenter_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-EVNotificationCenter_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-EVNotificationCenter_Tests/Pods-EVNotificationCenter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EVNotificationCenter_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3ED9C293FAE94A348B911A9C6B202D98 /* Debug */ = {
+		24CB11A8A60698D8098B04EF8B2C20A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2193E7125FD7509E627B14A4C8B4CA2A /* Pods-EVNotificationCenter_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -447,7 +410,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EVNotificationCenter_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,7 +419,71 @@
 			};
 			name = Debug;
 		};
-		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+		2A1E81D20D17C09962CADDA13C553280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3ECAE261E88D3BBB236E285AF94412 /* EVNotificationCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EVNotificationCenter/EVNotificationCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EVNotificationCenter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EVNotificationCenter/EVNotificationCenter.modulemap";
+				PRODUCT_MODULE_NAME = EVNotificationCenter;
+				PRODUCT_NAME = EVNotificationCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36B8754358215CCCB208CCCE9C15E1F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDED6EE6BEB3C4DBEDBB65BF004102A /* Pods-EVNotificationCenter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EVNotificationCenter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EVNotificationCenter_Tests/Pods-EVNotificationCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -488,6 +515,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -512,14 +540,13 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -551,6 +578,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -571,45 +599,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		907BE8463C515B241F584B9834EFF5EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C248ECA8F6DED84077DECD0D174C82A5 /* EVNotificationCenter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EVNotificationCenter/EVNotificationCenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EVNotificationCenter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EVNotificationCenter/EVNotificationCenter.modulemap";
-				PRODUCT_NAME = EVNotificationCenter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9652137F11AA0DCEB9FC66EC10C6E651 /* Debug */ = {
+		B721933F52AE9AEB3F04B6C72693D9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E24A67AE7004035DD379A9A17418AF00 /* Pods-EVNotificationCenter_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -629,7 +628,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EVNotificationCenter_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,9 +637,43 @@
 			};
 			name = Debug;
 		};
-		D548B79EDB2D40BFAE92BD3FA20088E9 /* Release */ = {
+		DE47B670A5D71D71831CFC968835D00F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C248ECA8F6DED84077DECD0D174C82A5 /* EVNotificationCenter.xcconfig */;
+			baseConfigurationReference = 34D6CCE717F8C764547F67371ADDC966 /* Pods-EVNotificationCenter_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EVNotificationCenter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EVNotificationCenter_Example/Pods-EVNotificationCenter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB5A2E3C8B6DD567BED604530964D859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3ECAE261E88D3BBB236E285AF94412 /* EVNotificationCenter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -657,6 +690,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EVNotificationCenter/EVNotificationCenter.modulemap";
+				PRODUCT_MODULE_NAME = EVNotificationCenter;
 				PRODUCT_NAME = EVNotificationCenter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -671,29 +705,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		078BFB24B4532FACA8E3AD801B17EF03 /* Build configuration list for PBXNativeTarget "Pods-EVNotificationCenter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24CB11A8A60698D8098B04EF8B2C20A3 /* Debug */,
+				36B8754358215CCCB208CCCE9C15E1F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
-				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E28F55EB99B30435ECA1D1D6896569D /* Build configuration list for PBXNativeTarget "EVNotificationCenter" */ = {
+		5D4FFF9518619BBD19A53E99303633B2 /* Build configuration list for PBXNativeTarget "EVNotificationCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				907BE8463C515B241F584B9834EFF5EE /* Debug */,
-				D548B79EDB2D40BFAE92BD3FA20088E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		947DE1B73A1C0FFB242D8D43D9975950 /* Build configuration list for PBXNativeTarget "Pods-EVNotificationCenter_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3ED9C293FAE94A348B911A9C6B202D98 /* Debug */,
-				1E4F526AAB4BDEBFBE39239BFB41569D /* Release */,
+				2A1E81D20D17C09962CADDA13C553280 /* Debug */,
+				FB5A2E3C8B6DD567BED604530964D859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -701,8 +735,8 @@
 		CE139CAAFD2710813798B67C879FB697 /* Build configuration list for PBXNativeTarget "Pods-EVNotificationCenter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9652137F11AA0DCEB9FC66EC10C6E651 /* Debug */,
-				1DD22BFB675B820307A8F29F816D346D /* Release */,
+				B721933F52AE9AEB3F04B6C72693D9FB /* Debug */,
+				DE47B670A5D71D71831CFC968835D00F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
